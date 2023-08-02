@@ -118,6 +118,27 @@ form button {
   color: black;
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter {
+    width: 80%;
+    background-color: #8b3656;
+    margin: 4px 0px;
+    border-radius: 25px;
+  }
+  .btn-submit {
+    background-color: #8b3656;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .filter:hover {
   cursor: pointer;
   color: black;

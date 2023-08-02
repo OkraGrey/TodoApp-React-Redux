@@ -6,22 +6,22 @@ const initialState = {
   todos: [
     {
       id: 1,
-      task: "task1 description",
+      task: "Wash Clothes",
       is_completed: false,
     },
     {
       id: 2,
-      task: "task1 description",
+      task: "Have to complete my Maths HomeWork",
       is_completed: false,
     },
     {
       id: 3,
-      task: "task1 description",
+      task: "Have to Work on Front End Project",
       is_completed: true,
     },
     {
       id: 4,
-      task: "task4 description",
+      task: "Have to work on Backend Project",
       is_completed: true,
     },
   ],

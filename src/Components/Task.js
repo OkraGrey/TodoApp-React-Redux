@@ -46,7 +46,7 @@ const Task = ({
           checked={task.is_completed}
           onChange={() => handleCheckBox(task.id)}
         />
-        {task.task} {task.is_completed ? "TRUE" : "FALSE"}
+        {task.task}
       </p>
       <div className="btn-container">
         <button
