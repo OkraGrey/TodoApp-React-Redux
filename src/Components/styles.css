@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #331d2c;
+}
+.container {
+  color: #efe1d1;
+  font-family: cursive;
+  display: flex;
+  border: 4px solid white;
+  box-shadow: 10px -5px 50px yellow;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TABLE */
+
+.table {
+  width: 80%;
+  align-items: center;
+  border: 5px solid white;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.table h1 {
+  text-align: center;
+}
+.task {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: #a78295;
+  border: 2px solid black;
+  font-size: 1.1rem;
+}
+.btn {
+  padding: 2px 5px;
+  margin: 0 5px;
+  border: none;
+  background-color: #a78295;
+}
+.btn :hover {
+  cursor: pointer;
+}
+#btn-edit {
+  color: brown;
+}
+#btn-del {
+  color: black;
+}
+/* ADD TODO */
+.AddTodoContainer {
+  width: 80%;
+  border: 5px solid white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 90%;
+  padding: 9px 10px;
+  border-radius: 5px;
+  margin: 10px 0 10px 5%;
+  font-family: cursive;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.05rem;
+}
+form button {
+  padding: 8px 10px;
+  width: 80%;
+  border-radius: 25px;
+  border: 2px solid black;
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+.btn-submit {
+  background-color: #a78295;
+  font-size: 1.1rem;
+  font-family: cursive;
+  /* color: #efe1d1; */
+  color: black;
+}
+.btn-submit:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.filter {
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: cursive;
+  background-color: #a78295;
+  /* color: #efe1d1; */
+  color: black;
+  font-weight: 600;
+}
+.filter:hover {
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+}
+.goBackToDos {
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: #a78295;
+}
+.goBackToDos:hover {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
