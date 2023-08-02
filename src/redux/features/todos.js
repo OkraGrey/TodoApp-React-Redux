@@ -58,6 +58,13 @@ const todoSlice = createSlice({
       object.task = action.payload.task;
       return state;
     },
+    EditCompleteStateAction: (state, action) => {
+      console.log(action.payload);
+      let object = state.todos.find((todo) => todo.id === action.payload);
+      object.is_completed = !object.is_completed;
+      console.log(object);
+      return state;
+    },
   },
 });
 
@@ -65,6 +72,7 @@ export const {
   EditByIdAction,
   DeleteByIdAction,
   AddTodoAction,
+  EditCompleteStateAction,
   CompleteAllAction,
   DeleteAllCompletedAction,
 } = todoSlice.actions;

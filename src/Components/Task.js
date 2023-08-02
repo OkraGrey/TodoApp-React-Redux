@@ -1,8 +1,10 @@
-import { Icon } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
-import { DeleteByIdAction } from "../redux/features/todos";
+import {
+  DeleteByIdAction,
+  EditCompleteStateAction,
+} from "../redux/features/todos";
 
 //Task Component
 const Task = ({
@@ -13,7 +15,6 @@ const Task = ({
   editForm,
 }) => {
   //state level variables
-  const inputFieldValue = useSelector((store) => store.todo.inputValue);
   const dispatch = useDispatch();
 
   const handleEditById = (task) => {
@@ -26,11 +27,26 @@ const Task = ({
     dispatch(DeleteByIdAction(id));
   };
 
+  const handleCheckBox = (id) => {
+    dispatch(EditCompleteStateAction(id));
+  };
+
   //Actual Component
   return (
     <div className="task" key={task.id}>
-      <p>
-        {task.is_completed ? "TRUE" : "FALSE"} - {task.task}
+      <p
+        style={
+          task.is_completed
+            ? { textDecoration: "line-through" }
+            : { textDecoration: "none" }
+        }
+      >
+        <input
+          type="checkbox"
+          checked={task.is_completed}
+          onChange={() => handleCheckBox(task.id)}
+        />
+        {task.task} {task.is_completed ? "TRUE" : "FALSE"}
       </p>
       <div className="btn-container">
         <button

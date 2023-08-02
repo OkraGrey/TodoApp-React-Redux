@@ -1,5 +1,5 @@
 import Task from "./Task";
-import { faTrash, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   CompleteAllAction,
@@ -17,11 +17,9 @@ const TodoTable = ({
   setEditForm,
 }) => {
   //State Variables
-  const [tasks, setTasks] = useState([...todos]);
   const [all, setAll] = useState(true);
   const [incomplete, setIncomplete] = useState(false);
   const [complete, setComplete] = useState(false);
-  const dataArray = [];
   const dispatch = useDispatch();
   //Button handlers => Filters
   const handleInCompleteFilter = () => {

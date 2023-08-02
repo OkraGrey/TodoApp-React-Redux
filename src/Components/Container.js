@@ -2,7 +2,6 @@ import { useState } from "react";
 import AddTodo from "./AddTodo";
 import TodoTable from "./TodoTable";
 import "./styles.css";
-import { useSelector } from "react-redux";
 const Container = ({ todos }) => {
   // const todos = useSelector((state) => state.todo);
   // console.log(todos);
@@ -14,7 +13,7 @@ const Container = ({ todos }) => {
   };
   return (
     <div className="container">
-      <h1>Todo Application</h1>
+      <h1 className="main-heading">Todo Application</h1>
       <AddTodo
         todos={todos}
         editForm={editForm}

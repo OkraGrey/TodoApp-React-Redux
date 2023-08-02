@@ -20,7 +20,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.main-heading {
+  margin: 20px;
+}
 /* TABLE */
 
 .table {
@@ -43,6 +45,10 @@ body {
   border: 2px solid black;
   font-size: 1.1rem;
 }
+.task input[type="checkbox"] {
+  accent-color: #331d2c;
+  margin-right: 5px;
+}
 .btn {
   padding: 2px 5px;
   margin: 0 5px;
@@ -58,6 +64,7 @@ body {
 #btn-del {
   color: black;
 }
+
 /* ADD TODO */
 .AddTodoContainer {
   width: 80%;

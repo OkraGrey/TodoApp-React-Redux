@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AddTodoAction, EditByIdAction } from "../redux/features/todos";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const AddTodo = ({
   todos,
