@@ -13,7 +13,7 @@ const Container = ({ todos }) => {
   };
   return (
     <div className="container">
-      <h1 className="main-heading">Todo Application</h1>
+      <h1 className="main-heading">Todo Application Updated</h1>
       <AddTodo
         todos={todos}
         editForm={editForm}
